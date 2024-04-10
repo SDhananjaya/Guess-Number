@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            transition: 3s;
+            color: white;
+            border-radius: 10px;
+        }
+        .widthmax{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+   <div id="input"> </div>
+   <br/>
+   <button onclick="changecolor()">Change</button>
+   
+
+   <script>
+    var input=document.getElementById("input")
+
+    function changecolor(){
+
+        input.style.backgroundColor="red"
+        input.setAttribute("class","widthmax")
+    }
+   </script>
+    
+</body>
+</html>
